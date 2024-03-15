@@ -1,0 +1,1 @@
+web: java -XX:+UnlockExperimavengers-apientalVMOptions -XX:+UseCGroupMemoryLimitForHeap $JAVA_OPTS -Dserver.port=$PORT -Dspring.profiles.active=heroku -jar target/*.jar
