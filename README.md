@@ -1,18 +1,17 @@
-# Avengers API - LiveCode DIO - 01/04/2021
+# Avengers API - DIO
 
 Desenvolvimento de uma API utilizando SpringBoot + Kotlin com o intuito de cadastro de Vingadores.
 
 ## Tecnologias / Frameworks / IDE
 
 - Intellij
-- SpringBoot 3.3.0
+- SpringBoot 3.2.0
 - Maven
 - Kotlin
 - SpringData JPA
 - PostgreSQL
 - Flyway
-- Java 8
-- Heroku
+- Java 17
 
 ## Criação do esqueleto do projeto
 
@@ -99,7 +98,7 @@ spring:
     hibernate:
       ddl-auto: none
       naming:
-        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
   main:
     allow-bean-definition-overriding: true
